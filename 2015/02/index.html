@@ -178,8 +178,8 @@ ul.thumbs_sheet li{width: 100% !important;float: none;border: none;}
 <script>
 var w = window.innerWidth, h = window.innerHeight;
 document.write('<video audio="audio" controls autoplay loop poster="./201502121941.JPG" preload="false" style="width:'+w+'px;height:'+h+'px;" id="bottom_video">'+
-'<source type="video/mp4" src="./201502121941.mp4" />'+
 '<source type="video/webm" src="./201502121941.webm" />'+
+'<source type="video/mp4" src="./201502121941.mp4" />'+
 '</video>');</script></p>
 <pre style="display:none"><code># Кодирование видео
 ffmpeg -framerate 0.8 -pattern_type glob -i 'IMG_*.JPG' -i '/Users/vm/Downloads/久石让 - 菊次郎的夏天.mp3' -ac 2 -ab 64k -ar 44100 -c:v libx264 -strict -2 -vf "fps=5,format=yuv420p" -t 6.25 -ss 0 -s 640x478 201502121941.mp4
