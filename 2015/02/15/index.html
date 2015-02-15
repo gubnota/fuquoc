@@ -195,21 +195,21 @@ ffmpeg \
 -i ./am_uot_wo.mp4 \
 -i ./am_uot.mp3 \
 -ac 2 -ab 64k -ar 44100 \
--vf "format=yuv420p" -r 1 \
+-vf "format=yuv420p,fps=30" -t 4 \
 -strict -2 ./am_uot.mp4
 
 ffmpeg \
 -i ./am_uot_wo.mp4 \
 -i ./am_uot.mp3 \
 -ac 2 -ab 64k -ar 44100 \
--r 1 \
+-t 4 \
 -strict -2 ./am_uot.webm
 
 ffmpeg \
 -i ./am_uot_wo.mp4 \
 -i ./am_uot.mp3 \
 -ac 2 -ab 64k -ar 44100 \
--r 1 \
+-r 1 -t 4 \
 -strict -2 ./am_uot.flv
 </code></pre>
 <p style="display:none"><a href="#top" class="right_quote"><small>наверх</small></a></p>
