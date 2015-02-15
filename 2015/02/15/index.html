@@ -192,23 +192,25 @@ ffmpeg \
 
 
 ffmpeg \
--i /Users/vm/Downloads/ẩm_ướt_wo.mp4 \
--i ~/Downloads/ẩm_ướt.mp3 \
+-i ./am_uot_wo.mp4 \
+-i ./am_uot.mp3 \
 -ac 2 -ab 64k -ar 44100 \
--strict -2 ~/Downloads/ẩm_ướt.mp4
+-vf "format=yuv420p" -r 1 \
+-strict -2 ./am_uot.mp4
 
 ffmpeg \
--i /Users/vm/Downloads/ẩm_ướt_wo.mp4 \
--i ~/Downloads/ẩm_ướt.mp3 \
--ac 2 -ab 64k -ar 44100 \
--strict -2 ~/Downloads/ẩm_ướt.webm
-
-ffmpeg \
--i /Users/vm/Downloads/ẩm_ướt_wo.mp4 \
--i ~/Downloads/ẩm_ướt.mp3 \
+-i ./am_uot_wo.mp4 \
+-i ./am_uot.mp3 \
 -ac 2 -ab 64k -ar 44100 \
 -r 1 \
--strict -2 ~/Downloads/ẩm_ướt.flv
+-strict -2 ./am_uot.webm
+
+ffmpeg \
+-i ./am_uot_wo.mp4 \
+-i ./am_uot.mp3 \
+-ac 2 -ab 64k -ar 44100 \
+-r 1 \
+-strict -2 ./am_uot.flv
 </code></pre>
 <p style="display:none"><a href="#top" class="right_quote"><small>наверх</small></a></p>
 </div></body>
